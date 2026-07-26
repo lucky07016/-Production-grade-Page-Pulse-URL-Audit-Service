@@ -78,7 +78,7 @@ export default function App() {
         setCacheMsg('Cache successfully cleared!');
         setTimeout(() => setCacheMsg(''), 3000);
       }
-    } catch (err) {
+    } catch {
       setCacheMsg('Failed to clear cache.');
     }
   };

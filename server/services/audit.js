@@ -11,7 +11,7 @@ export function validateUrl(urlStr) {
       return { isValid: false, error: 'URL protocol must be http or https' };
     }
     return { isValid: true, parsed };
-  } catch (err) {
+  } catch {
     return { isValid: false, error: 'Invalid URL structure' };
   }
 }
